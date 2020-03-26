@@ -1,15 +1,23 @@
 {
   "manifest_version": 2,
   "name": "Atualizar pedidos do super",
-  "description": "description",
-  "version": "0.001",
+  "description": "Script para monitorar o número de pedidos em análise.",
+  "version": "1",
+  "author": "Lucas Vieira",
 
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "pages/popup.html",
+    "default_title": "Veriificação do número de pedidos - SUPER"
+  },
+   
   "content_scripts": [
     {
     "matches": [
-      "<all_urls>"
+      "https://admin.appsuper.com.br/orders/order/*"
+     
     ],
-    "js": ["verificar_pedidos.js"]
+    "js": ["scripts/change_title.js"]
     }
   ],
 
