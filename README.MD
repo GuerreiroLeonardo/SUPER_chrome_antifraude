@@ -1,5 +1,7 @@
 # Extensão para monitorar o número de pedidos
 
+***
+
 ## Etapas
 1. Instalar a extensão de auto-recarregar
    * Instalar a extensão: https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko/related
@@ -12,7 +14,16 @@
    * Clickar em [Carregar sem compactação] e selecionar a pasta [extensao_antifraude]
    * Ativar a extensão
 
+***
+
 ## Utilidade
 * A primeira extensão ficará resposável por recarregar a página de pedidos de x em x segundos, evitando que tenhamos que fazer isso manualmente. 
 ` `
 * A seunda extensão irá rodar na página do super referente a pedidos, indicando no título da aba a quantidade de pedidos ("5 pedidos(s)"), caso existam. Caso não tenha pedidos, o título será mudado para "-". Assim, pode-se realizar outras tarefas e ter noção da quantidade de pedidos a serem analisados.
+
+***
+
+## Ilustração
+![Extensão funcionando](https://i.imgur.com/e2A6oio.png)
+
+***
