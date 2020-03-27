@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      alert("Botão 01");
+      var numero = prompt("Digite o número da pessoa", "5591");
+        if (numero != null) {
+          window.open("https://web.whatsapp.com/send?phone=" + numero); 
+        }
     });
   }, false);
 
@@ -12,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      alert("Botão 02");
+      // teste
+      alert("TESTA");
     });
   }, false);
 
@@ -20,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      alert("Botão 03");
+      // teste
     });
   }, false);
 
