@@ -24,7 +24,7 @@
 ***
 
 ## Ilustração
-![Extensão funcionando](https://i.imgur.com/P46LYYb.png)
+![Extensão funcionando](https://i.imgur.com/eGJWeEt.png)
 
 ***
 
