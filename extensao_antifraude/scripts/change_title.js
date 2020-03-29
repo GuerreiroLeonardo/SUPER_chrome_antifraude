@@ -6,9 +6,10 @@ if(typeof testa === "undefined") {
 } else {
   
   var str_selecionada = document.getElementsByClassName("selected")[0].innerText
-  console.log(str_selecionada)
 
-  if (str_selecionada == "Pagamento em análise"){
+  if (str_selecionada == "Todos"){
+    str_selecionada_fix = "Todos"
+  } else if (str_selecionada == "Pagamento em análise") {
     str_selecionada_fix = "Análises"
   } else if (str_selecionada == "Pagamento autorizado") {
     str_selecionada_fix = "Autorizados"
@@ -25,7 +26,7 @@ if(typeof testa === "undefined") {
   } else if (str_selecionada == "Pronto para entrega") {
     str_selecionada_fix = "Pronto p/ ntrega"
   } else if (str_selecionada == "Saiu para entrega") {
-    str_selecionada_fix = str_selecionada
+    str_selecionada_fix = "Saiu p/ entrega"
   } else if (str_selecionada == "Entregue") {
     str_selecionada_fix = "Entregues"
   } else if (str_selecionada == "Não Entregue") {
@@ -41,18 +42,23 @@ if(typeof testa === "undefined") {
   } else {
     str_selecionada_fix = str_selecionada
   }
-  
-  console.log(str_selecionada_fix)
-
-  var str_pedidos = document.getElementsByClassName(classe)[0].innerHTML
+ 
+  var str_pedidos = document.getElementsByClassName(classe)[0].innerText // innerHTML
   var num_pedidos = str_pedidos.trim()
   num_pedidos = num_pedidos.replace(" Pedidos", "")
   num_pedidos = num_pedidos.replace(" Pedido", "")
   
+  var n = num_pedidos.search("...");
+
     if(num_pedidos == "0"){
       document.title = "_" + " " + str_selecionada_fix
     } else {
-      document.title = num_pedidos + " " + str_selecionada_fix
+      if (n == -1) {
+        document.title = num_pedidos + " " + str_selecionada_fix
+      } else {
+        document.title = "#" + " " + str_selecionada_fix
+      }
+        
     }
   
 }

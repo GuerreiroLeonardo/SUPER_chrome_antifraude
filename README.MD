@@ -24,6 +24,11 @@
 ***
 
 ## Ilustração
-![Extensão funcionando](https://i.imgur.com/e2A6oio.png)
+![Extensão funcionando](https://i.imgur.com/P46LYYb.png)
+
+***
+
+## Vídeo tutorial
+[![tutorial](http://img.youtube.com/vi/p5VAlWwiYwA/0.jpg)](http://www.youtube.com/watch?v=p5VAlWwiYwA "tutorial")
 
 ***
