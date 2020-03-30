@@ -56,7 +56,8 @@ if(typeof testa === "undefined") {
                      numero + "\n" + 
                      pedido + "\n" + 
                      NumeroCartao_txt + "\n" + 
-                     NumeroCartao_txt + "\n" + "\n" + 
+                     NomeCartao_txt + "\n" + "\n" + 
+                     ValorCompra_txt + "\n" + "\n" + 
                      supermercado + "\n"
 
   mensagem_wpp = encodeURI(mensagem_wpp)
@@ -78,7 +79,7 @@ numero_wpp = numero_wpp.replace("-", "")
                         numero + "\n" +
                         "------" + "\n" +
                         NumeroCartao_txt + "\n" +
-                        NumeroCartao_txt + "\n" +
+                        NomeCartao_txt + "\n" +
                         "------" + "\n" +
                         pedido + "\n" + 
                         ValorCompra_txt + "\n" +
