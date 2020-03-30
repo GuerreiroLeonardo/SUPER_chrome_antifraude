@@ -28,7 +28,11 @@ if(typeof testa === "undefined") {
   var numero = document.getElementsByClassName("field-delivery_type")[3].innerText
   numero = numero.replace("Telefone:", "")
   numero = numero.trim()
-   
+  
+  var endereco = document.getElementsByClassName("field-shipping_address")[3].innerText
+  endereco = endereco.replace("Endereços:", "")
+  endereco = endereco.trim()
+
   var NumeroCartao = document.getElementsByClassName("payments__item")[0].getElementsByClassName("field-delivery_type")[2];
   NumeroCartao_txt = NumeroCartao.innerText
   NumeroCartao_txt = NumeroCartao_txt.replace("Status:", "")
@@ -77,6 +81,7 @@ numero_wpp = numero_wpp.replace("-", "")
                         email + "\n" +
                         cpf + "\n" +
                         numero + "\n" +
+                        endereco + "\n" + 
                         "------" + "\n" +
                         NumeroCartao_txt + "\n" +
                         NomeCartao_txt + "\n" +
