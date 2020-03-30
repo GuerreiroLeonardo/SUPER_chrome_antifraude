@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
 
   var checkPageButton = document.getElementById('botao_01');
@@ -20,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      // teste
-      alert("TESTA");
+      // DADOS DO PEDIDO NO PAINEL
+      console.log("Obter dados no painel")
+      alert("teste")
     });
   }, false);
 
@@ -29,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
   checkPageButton.addEventListener('click', function() {
 
     chrome.tabs.getSelected(null, function(tab) {
-      // teste
+      // DADOS NO BIGBOOST
+      console.log("Obter dados no bigboost")
     });
   }, false);
 
