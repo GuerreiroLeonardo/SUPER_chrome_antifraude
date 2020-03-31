@@ -91,7 +91,7 @@ numero_wpp = numero_wpp.replace("-", "")
                         ValorCompra_txt + "\n" +
                         "" + "\n" +
                         "------" + "\n" +
-                        '<a href="' + link_wpp + '" target="_blank">Mandar mensagem pro Ryann</a>' + '\n' + 
+                        '<a href="' + link_wpp + '" target="_blank">Mandar mensagem pro GRUPO</a>' + '\n' + 
                         "</pre>"
 
   conteudo_final = conteudo_html.replace(conteudo_txt, conteudo_final)
