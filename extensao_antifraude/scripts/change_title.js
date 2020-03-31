@@ -55,14 +55,15 @@ if(typeof testa === "undefined") {
   conteudo_txt = conteudo_txt.replace("PDV:", "")
   conteudo_txt = conteudo_txt.trim()
   
-  var mensagem_wpp = "*@Ryann Cunha Avisar que terá que apresentar o cartão para verificação na entrega*" + "\n" + "\n" + 
+  var mensagem_wpp = "*EQUIPE " + supermercado + "*, Checar os dados da cliente: " + "\n" + "\n" + 
                      nome + "\n" + 
+                     email + "\n" + 
                      numero + "\n" + 
                      pedido + "\n" + 
+                     "-------------------" + "\n" +
+                     NomeCartao_txt + "\n" + 
                      NumeroCartao_txt + "\n" + 
-                     NomeCartao_txt + "\n" + "\n" + 
-                     ValorCompra_txt + "\n" + "\n" + 
-                     supermercado + "\n"
+                     ValorCompra_txt + "\n"
 
   mensagem_wpp = encodeURI(mensagem_wpp)
   
@@ -92,9 +93,6 @@ numero_wpp = numero_wpp.replace("-", "")
                         "------" + "\n" +
                         '<a href="' + link_wpp + '" target="_blank">Mandar mensagem pro Ryann</a>' + '\n' + 
                         "</pre>"
-
-
-                        
 
   conteudo_final = conteudo_html.replace(conteudo_txt, conteudo_final)
   coloca_info.innerHTML = conteudo_final
