@@ -7,7 +7,7 @@
    * Instalar a extensão: https://chrome.google.com/webstore/detail/auto-refresh/ifooldnmmcmlbdennkpdnlnbgbmfalko/related
    * Acessar a página [https://admin.appsuper.com.br/orders/order/], clicar no ícone da extensão e definir uma quantidade de segundos para ela ser recarregada.
 
-2. Instalar a extensão de atualizar número de pedidos
+2. Clicar em "Clonar ou baixar" e fazer o download da extensão em zip. Extraia em alguma pasta do seu computador. Instalar a extensão de atualizar número de pedidos
    * Baixar esse repositório como zip e extrair para um local onde não será apagado
    * Acessar a página [chrome://extensions/]
    * Ativar [modo desenvolvedor]
